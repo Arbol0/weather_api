@@ -1,0 +1,16 @@
+env.py
+.env
+db.sqlite3
+
+# Compiled Python bytecode
+*.py[cod]
+
+# Log files
+*.log
+
+# JetBrains IDE
+.idea/
+.idea
+
+# Unit test reports
+TEST*.xml
