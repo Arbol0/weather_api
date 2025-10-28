@@ -17,8 +17,12 @@ Pasos para la instalación:
 ```pipenv shell```
 ```pipenv install```
 
+
 Pasos para la ejecucion:
 -
+- Ejecutar Dockerfile y contenedor docker
+- ```docker build -t weather_api . ```
+- ```docker run -p 8000:8000 weather_api ```
 - Ejecutar en la raiz del proyecto: 
 ```python manage.py runserver 0.0.0.0:8000```
 - Una vez iniciada la api, se pueden ejecutar los 4 enpoints como en estos ejemplos desde la terminal:
