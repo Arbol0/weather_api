@@ -12,7 +12,7 @@ de temperatura, preciptación o ambas según una localización y un rango de fec
 Pasos para la instalación:
 -
 - Clonar repositorio en local.
-- Renombrar .env.example a .env y añadir los valores.
+- Renombrar .env.example a .env.
 - Ejecutar pipenv para instalar librerias en la raiz del proyecto:
 ```pipenv shell```
 ```pipenv install```
