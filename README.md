@@ -20,12 +20,11 @@ Pasos para la instalación:
 
 Pasos para la ejecucion:
 -
-- Ejecutar Dockerfile y contenedor docker
+Ejecutar Dockerfile y contenedor docker:
 - ```docker build -t weather_api . ```
 - ```docker run -p 8000:8000 weather_api ```
-- Ejecutar en la raiz del proyecto: 
-```python manage.py runserver 0.0.0.0:8000```
-- Una vez iniciada la api, se pueden ejecutar los 4 enpoints como en estos ejemplos desde la terminal:
+
+Una vez iniciada la api, se pueden ejecutar los 4 enpoints como en estos ejemplos desde la terminal:
 - ```curl -X POST -H "Content-Type: application/json" -d '{"start_date": "2025-10-01", "end_date": "2025-10-01", "city_name": "madrid"}' http://localhost:8000/weather_app/weather_data/```
 - ```curl -X GET -H "Content-Type: application/json" -d '{"start_date": "2025-10-01", "end_date": "2025-10-01", "city_name": "madrid", "threshold_high": 30, "threshold_low": 0}' http://localhost:8000/weather_app/temperature/```
 - ```curl -X GET -H "Content-Type: application/json" -d '{"start_date": "2025-10-01", "end_date": "2025-10-01", "city_name": "madrid"}' http://localhost:8000/weather_app/precipitation/```
