@@ -10,6 +10,8 @@ numpy = "*"
 django = "*"
 djangorestframework = "*"
 python-dotenv = "*"
+pytest = "*"
+pytest-django = "*"
 
 [dev-packages]
 
