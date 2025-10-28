@@ -34,7 +34,7 @@ class MeteoApiHandler:
             coordinates['lon']: float = data["results"][0]["longitude"]
             return coordinates
         else:
-            self.messages.append(f"No se encontraron coordenadas para {city_name}")
+            self.messages.append(f"No coordinates for {city_name}")
             coordinates = dict()
             coordinates['lat'] = None
             coordinates['lon'] = None

@@ -1,8 +1,6 @@
 import pytest
 import pandas as pd
-import numpy as np
 from unittest.mock import patch, MagicMock
-from datetime import datetime
 
 from weather_app.services.meteo_api_handler import MeteoApiHandler
 
@@ -50,7 +48,7 @@ def test_get_coordinates_not_found(mock_get, handler):
     coords = handler.get_coordinates("CiudadInventada")
 
     assert coords is None
-    assert "No se encontraron coordenadas" in handler.messages[0]
+    assert "No coordinates for" in handler.messages[0]
 
 
 # --- TEST get_hourly_weather_data ---

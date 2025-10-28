@@ -44,8 +44,6 @@ class ModelHandler:
             hourly_weather_data = None
         return hourly_weather_data
 
-    def insert_user_queries(self):
-        pass
 
     def get_all_locations(self):
         """
@@ -62,9 +60,3 @@ class ModelHandler:
         """
         all_weather_data = HourlyWeatherData.objects.all().values()
         return all_weather_data
-
-    def get_user_queries(self):
-        pass
-
-
-
