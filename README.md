@@ -29,3 +29,11 @@ Una vez iniciada la api, se pueden ejecutar los 4 enpoints como en estos ejemplo
 - ```curl -X GET -H "Content-Type: application/json" -d '{"start_date": "2025-10-01", "end_date": "2025-10-01", "city_name": "madrid", "threshold_high": 30, "threshold_low": 0}' http://localhost:8000/weather_app/temperature/```
 - ```curl -X GET -H "Content-Type: application/json" -d '{"start_date": "2025-10-01", "end_date": "2025-10-01", "city_name": "madrid"}' http://localhost:8000/weather_app/precipitation/```
 - ```curl -X GET -H "Content-Type: application/json" -d '{"start_date": "2025-10-01", "end_date": "2025-10-01", "city_name": "madrid", "threshold_high": 30, "threshold_low": 0}' http://localhost:8000/weather_app/general_statistics/```
+
+Ejecucion de los tests con pytest:
+- ```docker exec -ti weather_api pytest weather_app/tests```
+
+O si no encuentra el contenedor:
+- ```docker ps```
+- ```docker exec -ti <Id_container> pytest weather_app/tests```
+
