@@ -13,15 +13,13 @@ Pasos para la instalación:
 -
 - Clonar repositorio en local.
 - Renombrar .env.example a .env.
-- Ejecutar pipenv para instalar librerias en la raiz del proyecto:
-```pipenv shell```
-```pipenv install```
+- Ejecutar Dockerfile desde la raíz del proyecto para crear el contendor de la api, con todas las dependencias:
+- ```docker build -t weather_api . ```
 
 
 Pasos para la ejecucion:
 -
-Ejecutar Dockerfile y contenedor docker:
-- ```docker build -t weather_api . ```
+ Ejecutar la api en el contenedor docker:
 - ```docker run -p 8000:8000 weather_api ```
 
 Una vez iniciada la api, se pueden ejecutar los 4 enpoints como en estos ejemplos desde la terminal:
